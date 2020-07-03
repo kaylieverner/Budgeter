@@ -1,0 +1,22 @@
+{
+  "icons": [
+    {
+      "src": "icon_512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "icon_192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ],
+  "name": "Budget Tracking App",
+  "short_name": "Budgeter",
+  "orientation": "portrait",
+  "display": "standalone",
+  "start_url": "/",
+  "description": "An application for keeping track of cashflow on the go.",
+  "background_color": "#01579b",
+  "theme_color": "#ffffff"
+}

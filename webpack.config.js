@@ -3,9 +3,7 @@ const path = require("path");
 
 const config = {
   mode: "development",
-  entry: {
-    home: "./public/index.js", 
-  },
+  entry: __dirname + '/public/index.js',
   output: {
     path: __dirname + "/public/dist",
     filename: "bundle.js"
@@ -21,14 +19,14 @@ const config = {
       theme_color: "#ffffff",
       start_url: "/",
       icons: [{
-        "src": path.resolve("./public/icons/icon-192x192.png"),
-        "sizes": "192x192",
-        "type": "image/png"
+        src: path.resolve("./public/icons/icon-192x192.png"),
+        sizes: "192x192",
+        type: "image/png"
       },
       {
-        "src": path.resolve("./public/icons/icon-512x512.png"),
-        "sizes": "512x512",
-        "type": "image/png"
+        src: path.resolve("./public/icons/icon-512x512.png"),
+        sizes: "512x512",
+        type: "image/png"
       }]
     })
   ],
