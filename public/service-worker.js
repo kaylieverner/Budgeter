@@ -1,14 +1,14 @@
 const FILES_TO_CACHE = [
     "/",
-    "/manifest.json",
+    "/dist/manifest.json",
     "/favicon.ico",
-    "/style.css",
+    "/styles.css",
     "/index.html",
     "/dist/bundle.js",
     "https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.3.1/materia/bootstrap.css",
     "https://use.fontawesome.com/releases/v5.8.2/css/all.css",
-    "/icons/icon-192x192.jpg",
-    "/icons/icon-512x512.jpg"
+    "/icons/icon-192x192.png",
+    "/icons/icon-512x512.png"
   ];
   
   const STATIC_CACHE = "static-cache-v1";
