@@ -12,7 +12,7 @@ const FILES_TO_CACHE = [
   ];
   
   const STATIC_CACHE = "static-cache-v1";
-  const RUNTIME_CACHE = "runtime-cache";
+  const RUNTIME_CACHE = 'data-cache-v1';
   
   self.addEventListener("install", event => {
     event.waitUntil(
