@@ -1,5 +1,6 @@
 const FILES_TO_CACHE = [
     "/",
+    "/db.js",
     "/dist/manifest.json",
     "/favicon.ico",
     "/styles.css",
@@ -12,7 +13,7 @@ const FILES_TO_CACHE = [
   ];
   
   const STATIC_CACHE = "static-cache-v1";
-  const RUNTIME_CACHE = 'data-cache-v1';
+  const RUNTIME_CACHE = "runtime-cache";
   
   self.addEventListener("install", event => {
     event.waitUntil(
@@ -90,4 +91,26 @@ const FILES_TO_CACHE = [
       })
     );
   });
-  
+
+  self.addEventListener('sync', function(event) {
+    if (event.tag == 'myFirstSync') {
+      event.waitUntil(function () {
+        console.log("sync test");
+      });
+    }
+  });
+
+  // self.addEventListener("fetch", function (event) {
+  //   event.respondWith(
+  //     fetch(event.request).catch(function () {
+  //       return caches.match(event.request).then(function (response) {
+  //         if (response) {
+  //           return response;
+  //         } else if (event.request.headers.get("accept").includes("text/html")) {
+  //           return caches.match("/index.html");
+  //         }
+  //       });
+  //     })
+  //   );
+  // });
+ 
